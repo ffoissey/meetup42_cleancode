@@ -14,9 +14,9 @@ t_point move_point(const t_point point, const int delta_x, const int delta_y)
 
 int main(void)
 {
-    t_point point = {0, 0};
-
-    point = move_point(point, 2, 3);
-    printf("New Coordinates: (%d, %d)\n", point.x, point.y);
+    const t_point point = {0, 0};
+    const t_point new_point = move_point(point, 2, 3);
+    
+    printf("New Coordinates: (%d, %d)\n", new_point.x, new_point.y);
     return (EXIT_SUCCESS);
-    }
+}

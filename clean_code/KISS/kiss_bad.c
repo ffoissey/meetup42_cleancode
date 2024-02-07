@@ -11,8 +11,8 @@ static double sum_recursive(const double *arr, const int start, const size_t end
 
 double average(const double *arr, const size_t length)
 {
-    const double totalSum = sumRecursive(arr, 0, length - 1);
-    return (totalSum / length);
+    const double total_sum = sum_recursive(arr, 0, length - 1);
+    return (total_sum / length);
 }
 
 int main(void)

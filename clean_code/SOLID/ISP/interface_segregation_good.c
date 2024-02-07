@@ -33,7 +33,7 @@ int main(void )
     const t_bird bird = {.walk = walk, .fly = fly};
 
     dog.walk();
-    // dog.fly();  Can't compile
+    dog.fly();
 
     bird.walk();
     bird.fly();

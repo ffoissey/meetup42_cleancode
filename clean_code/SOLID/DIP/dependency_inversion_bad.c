@@ -10,7 +10,7 @@ void log(const int fd, const char *message)
 
 int main(void)
 {
-    const int fd = open(LOG_FILE, O_RDONLY);
+    const int fd = open(LOG_FILE, O_WRONLY);
     
     if (fd < 0)
     {

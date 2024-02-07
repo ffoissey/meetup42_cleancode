@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct  s_contact {
+typedef struct  s_contact
+{
     char name[50];
     char email[50];
     char phone_number[20];

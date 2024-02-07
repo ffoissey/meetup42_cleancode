@@ -14,7 +14,7 @@ void log(const int fd, const char *message)
 
 void fileLogger(const char *message)
 {
-    const int fd = open(LOG_FILE, O_RDONLY);
+    const int fd = open(LOG_FILE, O_WRONLY);
     
     if (fd < 0)
     {
@@ -33,7 +33,7 @@ void shellLogger(const char *message)
 
 int main(void)
 {
-    t_logger logger = fileLogger;
+    t_logger logger = shellLogger;
     logger("Message logged");
     return (EXIT_SUCCESS);
 }
